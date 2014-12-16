@@ -11,7 +11,7 @@ if (hats.length >= 10) {
 while (hats.length <=10) { 
 	donateOrSellHat(hats[0]); 
 	hats.push(getNewShinyHat()); 
-	highFive(geoff); 
+	highFive(geoff, paul); 
 }
 
 function mightAsWellBuyMoreHats() {
@@ -22,9 +22,8 @@ function definitelyTimeToBuyMoreHats() {
 
 }
 
-function highFive(dude) {
-	var bro = dude;
-	highFives.push(dude);
+function highFive(dude, otherDude) {
+	highFives.push(dude, otherDude);
 }
 
 function getNewShinyHat() {
