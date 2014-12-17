@@ -1,6 +1,8 @@
 var hats = [],
-	dudes = []
-	highFives = [];
+	dudes = [],
+	highFives = [],
+	cash = 50,       // Dudes always have $50 to start
+	selfEsteem = 0;  // 0 is normal, healthy amount of self esteem
 
 if (hats.length >= 10) {
 	mightAsWellBuyMoreHats();
@@ -28,4 +30,18 @@ function highFive(dude, otherDude) {
 
 function getNewShinyHat() {
 	
+}
+
+function donateOrSellHat(hat, selling) {
+  var index = hats.indexOf(hat);
+  if(index > -1) {
+    hats.splice(index, 1);
+  }
+
+  if(selling) {
+    cash += 10;
+    selfEsteem -= 1;
+  } else {
+    selfEsteem += 1;
+  }
 }
