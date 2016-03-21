@@ -16,14 +16,6 @@ while (hats.length <=10) {
 	highFive(geoff, paul); 
 }
 
-function mightAsWellBuyMoreHats() {
-
-}
-
-function definitelyTimeToBuyMoreHats() {
-
-}
-
 function highFive(dude, otherDude) {
 	highFives.push( {dude, otherDude} );
 }
